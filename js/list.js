@@ -1,7 +1,7 @@
 const list = [
 
     {
-        username: "Driztnar",
+        username: "Driztnar / Eramir",
         id: 1439,
         date: "8/18/2019"
     },
