@@ -1,12 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
+fetch("https://raw.githubusercontent.com/xPuls3/pendoria-flipper-registry/main/list.json").then((data) => data.json()).then((list) => {
 
-    fetch("https://raw.githubusercontent.com/xPuls3/pendoria-flipper-registry/main/list.json").then((data) => data.json()).then((list) => {
-
-        for (let i = 0; i < list.length; i++) {
-            addEntry(list[i].username, list[i].id, list[i].date);
-        }
-
-    });
+    for (let i = 0; i < list.length; i++) {
+        addEntry(list[i].username, list[i].id, list[i].date);
+    }
 
 });
 
